@@ -1,6 +1,6 @@
-# rinobot-line-plot
+# rinobot-bokeh-line-plot
 
-Makes a simple line plot of xy or xyyy data.
+Makes an interactive line plot of xy or xyyy data.
 
 So if your data has many columns, this package will take  the
 first column as the x axis, and each subsequent column as
@@ -10,7 +10,7 @@ different y plots.
 
 Just download the zip of the package and unzip into your `rinobot-packages` folder.
 
-> [Download rinobot-line-plot.zip](https://github.com/rinocloud/rinobot-line-plot/archive/master.zip)
+> [Download rinobot-bokeh-line-plot.zip](https://github.com/rinocloud/rinobot-bokeh-line-plot/archive/master.zip)
 
 - On Windows your `rinobot-packages` folder is in `My Documents`.
 - On Mac your `rinobot-packages` folder is in `Documents`.
