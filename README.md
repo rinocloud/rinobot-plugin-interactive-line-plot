@@ -8,8 +8,9 @@ different y plots.
 
 ## Installation
 
-Just download the zip of the package [here](https://github.com/rinocloud/rinobot-line-plot/archive/master.zip)
-and unzip into your `rinobot-packages` folder.
+Just download the zip of the package and unzip into your `rinobot-packages` folder.
+
+> [Download rinobot-line-plot.zip](https://github.com/rinocloud/rinobot-line-plot/archive/master.zip)
 
 - On Windows your `rinobot-packages` folder is in `My Documents`.
 - On Mac your `rinobot-packages` folder is in `Documents`.
@@ -32,7 +33,7 @@ If your data looks like
 
 If will generate a graph like
 
-<img src="examples/xy.png" width="200">
+<img src="examples/xy.png" width="600">
 
 ### XYYY
 
@@ -49,4 +50,4 @@ If your data looks like
 
 If will generate a graph like
 
-<img src="examples/xyyy.png" width="200">
+<img src="examples/xyyy.png" width="600">
