@@ -19,6 +19,8 @@ Just download the zip of the package and unzip into your `rinobot-packages` fold
 
 ### XY
 
+[Live example](https://rinocloud.github.io/rinobot-bokeh-line-plot/examples/data.html)
+
 If your data looks like
 
 ```
