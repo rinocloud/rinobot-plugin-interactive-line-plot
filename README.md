@@ -6,7 +6,15 @@ So if your data has many columns, this package will take  the
 first column as the x axis, and each subsequent column as
 different y plots.
 
-## Example
+## Installation
+
+Just download the zip of the package [here](https://github.com/rinocloud/rinobot-line-plot/archive/master.zip)
+and unzip into your `rinobot-packages` folder.
+
+- On Windows your `rinobot-packages` folder is in `My Documents`.
+- On Mac your `rinobot-packages` folder is in `Documents`.
+
+## Examples
 
 ### XY
 
@@ -24,7 +32,7 @@ If your data looks like
 
 If will generate a graph like
 
-![xy example plot](examples/xy.png)
+<img src="examples/xy.png" width="200">
 
 ### XYYY
 
@@ -41,7 +49,4 @@ If your data looks like
 
 If will generate a graph like
 
-![xyyy example plot](examples/xyyy.png)
-
-
-## Install
+<img src="examples/xyyy.png" width="200">
