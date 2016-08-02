@@ -46,7 +46,7 @@ def main(filepath):
 
     # loop over each y column and plot
     for index, yi in enumerate(y.T):
-        plot_styles["line_color"] = palette[index]
+        plot_styles["line_color"] = palette[index % len(palette)]
 
         # change the plot style for every second and third graph
         # just to make things interesting
