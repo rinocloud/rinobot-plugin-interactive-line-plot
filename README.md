@@ -1,4 +1,4 @@
-# rinobot-bokeh-line-plot
+# rinobot-interactive-line-plot
 
 Makes an interactive line plot of xy or xyyy data.
 
@@ -10,14 +10,14 @@ different y plots.
 
 Just download the zip of the package and unzip into your `rinobot-packages` folder.
 
-> [Download rinobot-bokeh-line-plot.zip](https://github.com/rinocloud/rinobot-bokeh-line-plot/archive/master.zip)
+> [Download rinobot-interactive-line-plot.zip](https://github.com/rinocloud/rinobot-interactive-line-plot/archive/master.zip)
 
 - On Windows your `rinobot-packages` folder is in `My Documents`.
 - On Mac your `rinobot-packages` folder is in `Documents`.
 
 ## Examples
 
-> [Live example link](https://rinocloud.github.io/rinobot-bokeh-line-plot/examples/data.html)
+> [Live example link](https://rinocloud.github.io/rinobot-interactive-line-plot/examples/data.html)
 
 If your data looks like
 
