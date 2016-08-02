@@ -27,7 +27,6 @@ def main(filepath):
     }
 
     # create the plot
-
     tools = [
         CustomSaveTool(),
         'box_zoom',
@@ -37,6 +36,7 @@ def main(filepath):
     ]
 
     p = figure(
+        webgl=True,
         x_axis_label='x',
         y_axis_label='y',
         tools=tools,
