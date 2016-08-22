@@ -3,7 +3,7 @@
   "engine": "python3",
   "name": "rinobot-plugin-interactive-heatmap",
   "description": "Makes an interactive line plot of xy or xyyy data",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "directories": {
     "example": "examples"
   },
@@ -14,7 +14,10 @@
     "type": "git",
     "url": "git+https://github.com/rinocloud/rinobot-interactive-line-plot.git"
   },
-  "keywords": ["rinobot", "rinocloud"],
+  "keywords": [
+    "rinobot",
+    "rinocloud"
+  ],
   "author": "eoin murray",
   "license": "MIT",
   "bugs": {
