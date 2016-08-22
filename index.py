@@ -1,6 +1,7 @@
 import sys
 import os
 import numpy as np
+import warnings
 from bokeh.models import Tool, BoxZoomTool, PanTool, WheelZoomTool, ResetTool
 from bokeh.plotting import figure, output_file, save
 
@@ -11,11 +12,21 @@ class CustomSaveTool(Tool):
     __implementation__ = open(os.path.join(os.path.dirname(__file__), "custom_save.coffee")).read()
 
 
-def main(filepath):
+def load(fpath, skiprows=0):
+    with warnings.catch_warnings():
+        warnings.simplefilter("ignore")
+        try:
+            return np.loadtxt(fpath, skiprows=skiprows)
+        except ValueError:
+            return load(fpath, skiprows+1)
+        except StopIteration:
+            return []
 
+
+def main(filepath):
     # read and setup data
     filename_without_ext = os.path.splitext(filepath)[0]
-    data = np.loadtxt(filepath)
+    data = load(filepath)
     x = data[:, 0]
     y = data[:, 1:]
 

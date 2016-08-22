@@ -1,0 +1,132 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'unpublish',
+1 verbose cli   '--force' ]
+2 info using npm@3.9.5
+3 info using node@v6.2.2
+4 warn using --force I sure hope you know what you are doing.
+5 silly unpublish args[0] undefined
+6 silly unpublish thing {}
+7 verbose unpublish { main: 'index.py',
+7 verbose unpublish   engine: 'python3',
+7 verbose unpublish   name: 'rinobot-heatmap',
+7 verbose unpublish   description: 'Makes an interactive line plot of xy or xyyy data',
+7 verbose unpublish   version: '0.0.3',
+7 verbose unpublish   directories: { example: 'examples' },
+7 verbose unpublish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+7 verbose unpublish   repository:
+7 verbose unpublish    { type: 'git',
+7 verbose unpublish      url: 'git+https://github.com/rinocloud/rinobot-interactive-line-plot.git' },
+7 verbose unpublish   keywords: [ 'rinobot', 'rinocloud' ],
+7 verbose unpublish   author: { name: 'eoin murray' },
+7 verbose unpublish   license: 'MIT',
+7 verbose unpublish   bugs: { url: 'https://github.com/rinocloud/rinobot-interactive-line-plot/issues' },
+7 verbose unpublish   homepage: 'https://github.com/rinocloud/rinobot-interactive-line-plot#readme',
+7 verbose unpublish   readme: '# rinobot-interactive-line-plot\n\nMakes an interactive line plot of xy or xyyy data.\n\nSo if your data has many columns, this package will take  the\nfirst column as the x axis, and each subsequent column as\ndifferent y plots.\n\n## Installation\n\nJust download the zip of the package and unzip into your `rinobot-packages` folder.\n\n> [Download rinobot-interactive-line-plot.zip](https://github.com/rinocloud/rinobot-interactive-line-plot/archive/master.zip)\n\n- On Windows your `rinobot-packages` folder is in `My Documents`.\n- On Mac your `rinobot-packages` folder is in `Documents`.\n\n## Examples\n\n> [Live example link](https://rinocloud.github.io/rinobot-interactive-line-plot/examples/data.html)\n\nIf your data looks like\n\n```\n0.0 8.7\n1.4 2.4\n2.4 2.3\n3.3 3.5\n4.1 7.3\n...\n...\n```\n\nIf will make an interactive html graph like:\n\n<img src="examples/screenshot.png" width="600">\n',
+7 verbose unpublish   readmeFilename: 'README.md',
+7 verbose unpublish   gitHead: '8345aadfc30bb1faae590f81f7febeb123e54607',
+7 verbose unpublish   _id: 'rinobot-heatmap@0.0.3' }
+8 verbose getPublishConfig undefined
+9 silly ls normalized rinobot-heatmap/0.0.3
+10 silly gentlyRm /Users/eoinmurray/.npm/rinobot-heatmap/0.0.3 is being purged
+11 verbose gentlyRm don't care about contents; nuking /Users/eoinmurray/.npm/rinobot-heatmap/0.0.3
+12 silly vacuum-fs purging /Users/eoinmurray/.npm/rinobot-heatmap/0.0.3
+13 silly vacuum-fs quitting because other entries in /Users/eoinmurray/.npm/rinobot-heatmap
+14 silly mapToRegistry name rinobot-heatmap
+15 silly mapToRegistry using default registry
+16 silly mapToRegistry registry https://registry.npmjs.org/
+17 silly mapToRegistry data Result {
+17 silly mapToRegistry   raw: 'rinobot-heatmap',
+17 silly mapToRegistry   scope: null,
+17 silly mapToRegistry   name: 'rinobot-heatmap',
+17 silly mapToRegistry   rawSpec: '',
+17 silly mapToRegistry   spec: 'latest',
+17 silly mapToRegistry   type: 'tag' }
+18 silly mapToRegistry uri https://registry.npmjs.org/rinobot-heatmap
+19 verbose get GET as part of write; not caching result
+20 verbose request uri https://registry.npmjs.org/rinobot-heatmap?write=true
+21 verbose request no auth needed
+22 info attempt registry request try #1 at 2:35:51 PM
+23 verbose request using bearer token for auth
+24 verbose request id 792954c7c95d7d66
+25 http request GET https://registry.npmjs.org/rinobot-heatmap?write=true
+26 http 200 https://registry.npmjs.org/rinobot-heatmap?write=true
+27 verbose headers { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+27 verbose headers   etag: '"712NHX1F0E5WMSBVGL9C5K939"',
+27 verbose headers   'content-type': 'application/json',
+27 verbose headers   'content-encoding': 'gzip',
+27 verbose headers   'cache-control': 'max-age=0',
+27 verbose headers   'transfer-encoding': 'chunked',
+27 verbose headers   'accept-ranges': 'bytes',
+27 verbose headers   date: 'Mon, 22 Aug 2016 12:35:52 GMT',
+27 verbose headers   via: '1.1 varnish',
+27 verbose headers   connection: 'keep-alive',
+27 verbose headers   'x-served-by': 'cache-ams4444-AMS',
+27 verbose headers   'x-cache': 'MISS',
+27 verbose headers   'x-cache-hits': '0',
+27 verbose headers   'x-timer': 'S1471869351.906021,VS0,VE374',
+27 verbose headers   vary: 'Accept-Encoding' }
+28 silly get cb [ 200,
+28 silly get   { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+28 silly get     etag: '"712NHX1F0E5WMSBVGL9C5K939"',
+28 silly get     'content-type': 'application/json',
+28 silly get     'content-encoding': 'gzip',
+28 silly get     'cache-control': 'max-age=0',
+28 silly get     'transfer-encoding': 'chunked',
+28 silly get     'accept-ranges': 'bytes',
+28 silly get     date: 'Mon, 22 Aug 2016 12:35:52 GMT',
+28 silly get     via: '1.1 varnish',
+28 silly get     connection: 'keep-alive',
+28 silly get     'x-served-by': 'cache-ams4444-AMS',
+28 silly get     'x-cache': 'MISS',
+28 silly get     'x-cache-hits': '0',
+28 silly get     'x-timer': 'S1471869351.906021,VS0,VE374',
+28 silly get     vary: 'Accept-Encoding' } ]
+29 verbose get saving rinobot-heatmap to /Users/eoinmurray/.npm/registry.npmjs.org/rinobot-heatmap_3Fwrite_3Dtrue/.cache.json
+30 verbose correctMkdir /Users/eoinmurray/.npm correctMkdir not in flight; initializing
+31 verbose unpublish removing attachments { shasum: '62a842cbc1867f499c8d55aed1fcd71d8b88e41b',
+31 verbose unpublish   tarball: 'http://registry.npmjs.org/rinobot-heatmap/-/rinobot-heatmap-0.0.3.tgz' }
+32 info unpublish No versions remain, removing entire package
+33 verbose request uri https://registry.npmjs.org/rinobot-heatmap/-rev/3-07117dddada362434e5d9fd90c80c874
+34 verbose request sending authorization for write operation
+35 info attempt registry request try #1 at 2:35:52 PM
+36 verbose request using bearer token for auth
+37 http request DELETE https://registry.npmjs.org/rinobot-heatmap/-rev/3-07117dddada362434e5d9fd90c80c874
+38 http 400 https://registry.npmjs.org/rinobot-heatmap/-rev/3-07117dddada362434e5d9fd90c80c874
+39 verbose headers { 'content-type': 'application/json',
+39 verbose headers   'cache-control': 'max-age=300',
+39 verbose headers   'content-length': '17',
+39 verbose headers   'accept-ranges': 'bytes',
+39 verbose headers   date: 'Mon, 22 Aug 2016 12:35:53 GMT',
+39 verbose headers   via: '1.1 varnish',
+39 verbose headers   connection: 'keep-alive',
+39 verbose headers   'x-served-by': 'cache-ams4444-AMS',
+39 verbose headers   'x-cache': 'MISS',
+39 verbose headers   'x-cache-hits': '0',
+39 verbose headers   'x-timer': 'S1471869352.349507,VS0,VE670',
+39 verbose headers   vary: 'Accept-Encoding' }
+40 verbose request invalidating /Users/eoinmurray/.npm/registry.npmjs.org/rinobot-heatmap on DELETE
+41 verbose stack Error: Registry returned 400 for DELETE on https://registry.npmjs.org/rinobot-heatmap/-rev/3-07117dddada362434e5d9fd90c80c874
+41 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+41 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:242:14)
+41 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+41 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:200:22)
+41 verbose stack     at emitTwo (events.js:106:13)
+41 verbose stack     at Request.emit (events.js:191:7)
+41 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1067:10)
+41 verbose stack     at emitOne (events.js:101:20)
+41 verbose stack     at Request.emit (events.js:188:7)
+41 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:988:12)
+42 verbose statusCode 400
+43 verbose pkgid rinobot-heatmap
+44 verbose cwd /Users/eoinmurray/Dropbox/macbook-pro/algorithms/rinobot-interactive-line-plot
+45 error Darwin 15.4.0
+46 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "unpublish" "--force"
+47 error node v6.2.2
+48 error npm  v3.9.5
+49 error code E400
+50 error Registry returned 400 for DELETE on https://registry.npmjs.org/rinobot-heatmap/-rev/3-07117dddada362434e5d9fd90c80c874
+51 error If you need help, you may report this error at:
+51 error     <https://github.com/npm/npm/issues>
+52 verbose exit [ 1, true ]
