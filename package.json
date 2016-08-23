@@ -3,7 +3,7 @@
   "engine": "python3",
   "name": "rinobot-plugin-interactive-line-plot",
   "description": "Makes an interactive line plot of xy or xyyy data",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": "eoin murray",
   "license": "MIT",
   "repository": "https://github.com/rinocloud/rinobot-plugin-interactive-line-plot.git",
