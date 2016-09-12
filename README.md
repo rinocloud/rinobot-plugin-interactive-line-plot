@@ -17,7 +17,7 @@ Just download the zip of the package and unzip into your `rinobot-packages` fold
 
 ## Examples
 
-> [Live example link](https://rinocloud.github.io/rinobot-interactive-line-plot/examples/data.html)
+> [Live example link](https://rawgit.com/rinocloud/rinobot-plugin-interactive-line-plot/master/examples/data.html)
 
 If your data looks like
 
