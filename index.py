@@ -2,6 +2,7 @@ import sys
 import os
 import numpy as np
 import warnings
+import argparse
 from bokeh.models import Tool, BoxZoomTool, PanTool, WheelZoomTool, ResetTool
 from bokeh.plotting import figure, output_file, save
 
@@ -23,8 +24,13 @@ def load(fpath, skiprows=0):
             return []
 
 
-def main(filepath):
-    # read and setup data
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('filepath', type=str)
+    parser.add_argument('--prefix', type=str)
+    args = parser.parse_args()
+    filepath = args.filepath
+
     filename_without_ext = os.path.splitext(filepath)[0]
     data = load(filepath)
     x = data[:, 0]
@@ -73,6 +79,12 @@ def main(filepath):
     # output to html file
     p.plot_height=600
     p.plot_width=1000
+
+    if args.prefix:
+        dirname = os.path.dirname(filename_without_ext)
+        basename = os.path.basename(filename_without_ext)
+        filename_without_ext = os.path.join(dirname, args.prefix + basename)
+
     output_file(
         filename_without_ext + '.html',
         title=filename_without_ext + '.html',
@@ -81,7 +93,5 @@ def main(filepath):
     save(p)
 
 
-# if this is run from the command line then run the
-# main function
 if __name__ == "__main__":
-    main(sys.argv[1])
+    main()
