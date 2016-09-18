@@ -1,43 +1,21 @@
-import sys
-import os
+import rinobot_plugin as bot
 import numpy as np
-import warnings
-import argparse
+import os
 from bokeh.models import Tool, BoxZoomTool, PanTool, WheelZoomTool, ResetTool
 from bokeh.plotting import figure, output_file, save
-
-Set3_12 = ['#a6cee3','#1f78b4','#b2df8a','#33a02c','#fb9a99','#e31a1c','#fdbf6f','#ff7f00','#cab2d6','#6a3d9a','#ffff99','#b15928']
-
 
 class CustomSaveTool(Tool):
     __implementation__ = open(os.path.join(os.path.dirname(__file__), "custom_save.coffee")).read()
 
-
-def load(fpath, skiprows=0):
-    with warnings.catch_warnings():
-        warnings.simplefilter("ignore")
-        try:
-            return np.loadtxt(fpath, skiprows=skiprows)
-        except ValueError:
-            return load(fpath, skiprows+1)
-        except StopIteration:
-            return []
-
-
 def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument('filepath', type=str)
-    parser.add_argument('--prefix', type=str)
-    args = parser.parse_args()
-    filepath = args.filepath
 
-    filename_without_ext = os.path.splitext(filepath)[0]
-    data = load(filepath)
+    filepath = bot.filepath()
+
+    data = bot.loadfile(filepath)
     x = data[:, 0]
     y = data[:, 1:]
 
-    # setup plot colors and styles
-    palette = Set3_12
+    palette = ['#a6cee3','#1f78b4','#b2df8a','#33a02c','#fb9a99','#e31a1c','#fdbf6f','#ff7f00','#cab2d6','#6a3d9a','#ffff99','#b15928']
     plot_styles = {
         "line_width": 2,
         "line_color": palette[0],
@@ -80,16 +58,10 @@ def main():
     p.plot_height=600
     p.plot_width=1000
 
-    if args.prefix:
-        dirname = os.path.dirname(filename_without_ext)
-        basename = os.path.basename(filename_without_ext)
-        filename_without_ext = os.path.join(dirname, args.prefix + basename)
+    outname = bot.no_extension() + '-int-line-plot.html'
+    outpath = bot.output_filepath(outname)
 
-    output_file(
-        filename_without_ext + '.html',
-        title=filename_without_ext + '.html',
-        mode='inline'
-    )
+    output_file(outpath, title=outname, mode='inline')
     save(p)
 
 

@@ -6,6 +6,9 @@
   "version": "0.1.0",
   "author": "eoin murray",
   "license": "MIT",
+  "scripts": {
+    "postinstall": "pip install rinobot-plugin --upgrade"
+  },
   "repository": "https://github.com/rinocloud/rinobot-plugin-interactive-line-plot.git",
   "keywords": [
     "rinobot",
