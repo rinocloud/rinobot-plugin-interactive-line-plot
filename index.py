@@ -8,8 +8,9 @@ class CustomSaveTool(Tool):
     __implementation__ = open(os.path.join(os.path.dirname(__file__), "custom_save.coffee")).read()
 
 def main():
-
     filepath = bot.filepath()
+    xlabel = bot.get_arg('xlabel', type=str)
+    ylabel = bot.get_arg('ylabel', type=str)
 
     data = bot.loadfile(filepath)
     x = data[:, 0]
@@ -33,8 +34,8 @@ def main():
 
     p = figure(
         webgl=True,
-        x_axis_label='x',
-        y_axis_label='y',
+        x_axis_label=xlabel,
+        y_axis_label=ylabel,
         tools=tools,
         active_drag='box_zoom'
     )

@@ -6,7 +6,16 @@
   "version": "0.4.0",
   "author": "eoin murray",
   "license": "MIT",
-  "options": {},
+  "options": {
+    "xlabel": {
+      "type": "string",
+      "description": "The label for the x axis"
+    },
+    "ylabel": {
+      "type": "string",
+      "description": "The label for the y axis"
+    }
+  },
   "scripts": {
     "postinstall": "pip install rinobot-plugin --upgrade"
   },
